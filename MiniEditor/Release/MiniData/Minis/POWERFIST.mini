@@ -1,0 +1,40 @@
+#Mini_name:	POWERFIST
+
+#Points:	1
+
+#Weapon_type:	Power_Fist
+#Weapon_strength:	6
+#Weapon_skill:	3
+#Initiative:	1
+#Attacks:	2
+
+#FireArm_type:	Pistol
+#FireArm_strength:	3
+#Ballistic_skill:	5
+#Firing_range:	1
+#Rate_of_fire:	3
+#Armor_piercing:	1
+
+#Toughness:	1
+#Wounds:	1
+#Save:	1
+
+#Movement_speed:	1
+
+#Model_name:	Dreadnought
+
+#Size:
+#X:	1.21022	#Y:	1.06513	#Z:	0.64804
+
+#Position:
+#X:	0	#Y:	0	#Z:	0
+
+#Rotation:
+#X:	0	#Y:	0	#Z:	0
+
+#Scale:
+#X:	1	#Y:	1	#Z:	1
+
+#Color:
+#R:	1	#G:	1	#B:	1	#A:	1
+

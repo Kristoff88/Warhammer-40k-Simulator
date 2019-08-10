@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Builder">
+</Property><Property Name="Solution File" Value="D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder.sln">
+</Property><Property Name="User Options File" Value="D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder.suo">
+</Property><Property Name="Date" Value="20 February 2012">
+</Property><Property Name="Time" Value="20:11">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Builder.sln" Description="File successfully backed up as D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Builder.suo" Description="File successfully backed up as D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder.suo.old">
+</Event><Event ErrorLevel="0" Project="Builder" Source="Builder\Builder.vcproj" Description="Converting project file 'D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder\Builder.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Builder" Source="Builder\Builder.vcproj" Description="Attribute 'EnableManagedIncrementalBuild' of 'Debug|Win32' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="Builder" Source="Builder\Builder.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Builder" Source="Builder\Builder.vcproj" Description="Done converting to new project file 'D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder\Builder.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Builder" Source="Builder\Builder.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Builder.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Builder.sln" Description="Converted">
+</Event></UpgradeLog>

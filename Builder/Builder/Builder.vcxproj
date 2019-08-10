@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29850B41-93C8-4B75-98B0-FBAA96091FC5}</ProjectGuid>
+    <RootNamespace>Builder</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>GlobalHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>FreeImage.lib;opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AddModuleNamesToAssembly>%(AddModuleNamesToAssembly)</AddModuleNamesToAssembly>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>GlobalHeaders.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>python26.lib;FreeImage.lib;opengl32.lib;glu32.lib;glaux.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="MainNode.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WndProcedures.h" />
+    <ClInclude Include="CameraOperator.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Details.h" />
+    <ClInclude Include="Grass.h" />
+    <ClInclude Include="Lights.h" />
+    <ClInclude Include="Liquids.h" />
+    <ClInclude Include="MenuOperator.h" />
+    <ClInclude Include="TerrainEditor.h" />
+    <ClInclude Include="TerrainEditorHeaders.h" />
+    <CustomBuildStep Include="ObjectOperator.h" />
+    <ClInclude Include="Cubemap.h" />
+    <ClInclude Include="Clouds.h" />
+    <ClInclude Include="TerrainEditor\ModelsOperator\ModelsOperator.h" />
+    <ClInclude Include="TerrainEditor\ModelsOperator\Model\Model.h" />
+    <ClInclude Include="Morphing.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Textures.h" />
+    <ClInclude Include="TextOperator.h" />
+    <ClInclude Include="GlobalHeaders.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utilities\Tools\ToolsHeader.h" />
+    <ClInclude Include="Utilities\Tools\Vector\Vector3.h" />
+    <ClInclude Include="Utilities\Tools\OGLPosition\OGLPosition.h" />
+    <ClInclude Include="Utilities\Tools\Bitmap\Bitmap.h" />
+    <ClInclude Include="Utilities\Tools\Rotate\Rotate.h" />
+    <ClInclude Include="Utilities\Tools\CrossProduct\crossProduct.h" />
+    <ClInclude Include="Utilities\Tools\ProgressDialog\ProgressDialog.h" />
+    <ClInclude Include="Utilities\Tools\obj_loader\obj_loader.h" />
+    <ClInclude Include="Utilities\Tools\Font\Font.h" />
+    <ClInclude Include="Utilities\Tools\IsNumber\IsNumber.h" />
+    <ClInclude Include="Utilities\Tools\StripName\StripName.h" />
+    <ClInclude Include="Utilities\Tools\FolderBrowser\FolderBrowser.h" />
+    <ClInclude Include="Utilities\Tools\Color\Color.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="ObjectOperator.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GlobalHeaders.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Cubemap.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <EnableFiberSafeOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <ClCompile Include="Clouds.cpp" />
+    <ClCompile Include="TerrainEditor\ModelsOperator\ModelsOperator.cpp" />
+    <ClCompile Include="TerrainEditor\ModelsOperator\Model\Model.cpp" />
+    <ClCompile Include="TextOperator.cpp" />
+    <ClCompile Include="Utilities\Tools\Vector\Vector3.cpp" />
+    <ClCompile Include="Utilities\Tools\OGLPosition\OGLPosition.cpp" />
+    <ClCompile Include="Utilities\Tools\Bitmap\Bitmap.cpp" />
+    <ClCompile Include="Utilities\Tools\Rotate\Rotate.cpp" />
+    <ClCompile Include="Utilities\Tools\CrossProduct\CrossProduct.cpp" />
+    <ClCompile Include="Utilities\Tools\ProgressDialog\ProgressDialog.cpp" />
+    <ClCompile Include="Utilities\Tools\obj_loader\obj_loader.cpp" />
+    <ClCompile Include="Utilities\Tools\Font\Font.cpp" />
+    <ClCompile Include="Utilities\Tools\IsNumber\IsNumber.cpp" />
+    <ClCompile Include="Utilities\Tools\StripName\StripName.cpp" />
+    <ClCompile Include="Utilities\Tools\FolderBrowser\FolderBrowser.cpp" />
+    <ClCompile Include="Utilities\Tools\Color\Color.cpp" />
+    <ClCompile Include="Builder.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GlobalHeaders.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="GlobalHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GlobalHeaders.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GlobalHeaders.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Builder.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Builder.ico" />
+    <None Include="..\..\Kopie Buildera\Builder 36 ( zapis+odczyt map prawie 100% )\Builder\Builder.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+    <None Include="..\..\Kopie Buildera\Builder 36 ( zapis+odczyt map prawie 100% )\Builder\small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

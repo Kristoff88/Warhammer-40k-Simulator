@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\MainNode">
+      <UniqueIdentifier>{b350582d-b205-4ca0-9b26-190b89c1b50b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\Window">
+      <UniqueIdentifier>{6c990c84-e85b-4008-b2fb-65a9fa52cde0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor">
+      <UniqueIdentifier>{cc5e0536-1ebd-4e73-9191-add277a606d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\ObjectOperator">
+      <UniqueIdentifier>{3c6f1aa2-f20f-4205-aef6-13479f815c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\Cubemap">
+      <UniqueIdentifier>{26a792fb-b5dd-4fac-989c-520c68fd61fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\Clouds">
+      <UniqueIdentifier>{61184c69-42d7-4fc1-88c7-ae1f58650fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\Models Operator">
+      <UniqueIdentifier>{5c1ecbaa-e3cb-414b-99ae-59557e46d8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\Models Operator\Model">
+      <UniqueIdentifier>{ecb24545-7178-49a7-9b0f-6af0efe5caf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\Terrain">
+      <UniqueIdentifier>{93325aea-24ba-49ca-bcc9-530046e65736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainNode\TerrainEditor\TextOperator">
+      <UniqueIdentifier>{1cdce850-8f0e-44d6-8ab1-c3c08d2b6007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29">
+      <UniqueIdentifier>{4ed56097-b656-435c-8dba-6457c739d079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities">
+      <UniqueIdentifier>{ba1f048a-05cb-4ed3-ae35-22410e619033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Vector3">
+      <UniqueIdentifier>{a4983154-056c-4cfe-b55b-5afc33596298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\OGLPosition">
+      <UniqueIdentifier>{4cf4d017-a3d5-49e6-b38e-50e72098ddc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Bitmap">
+      <UniqueIdentifier>{06396c0f-2463-4fb7-b78a-99de0533f42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Rotate">
+      <UniqueIdentifier>{177a2db4-3b33-4628-b497-4dad0cab0f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\CrossProduct">
+      <UniqueIdentifier>{ba85ae62-878f-4a8b-a080-4075dbe2b798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Progress Dialog">
+      <UniqueIdentifier>{a5038abd-9013-45e9-bfe0-a10c9a020461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\OBJ Loader">
+      <UniqueIdentifier>{0bf1709d-6701-4a70-a29b-f605e8d53dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Font">
+      <UniqueIdentifier>{cedbbcd8-48a9-46a5-ba1c-690af4f8779c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\IsNumber">
+      <UniqueIdentifier>{a05b143e-2218-4f79-8be8-07efc85c4f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\StripName">
+      <UniqueIdentifier>{c3ea7eb1-a343-4ed7-bd6d-d8dfc76b752c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\FolderBrowser">
+      <UniqueIdentifier>{318f0e35-a7b0-4305-ba4d-adcc7aba6d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GlobalHeaders %28PCH%29\Utilities\Color">
+      <UniqueIdentifier>{cb2825d0-87b9-4a4c-91c1-005f97a0b744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainNode.h">
+      <Filter>Header Files\MainNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\MainNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\MainNode\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="WndProcedures.h">
+      <Filter>Header Files\MainNode\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraOperator.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Details.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Liquids.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuOperator.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEditor.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEditorHeaders.h">
+      <Filter>Header Files\MainNode\TerrainEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Cubemap.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Cubemap</Filter>
+    </ClInclude>
+    <ClInclude Include="Clouds.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Clouds</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEditor\ModelsOperator\ModelsOperator.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Models Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEditor\ModelsOperator\Model\Model.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Models Operator\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Morphing.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Header Files\MainNode\TerrainEditor\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="TextOperator.h">
+      <Filter>Header Files\MainNode\TerrainEditor\TextOperator</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalHeaders.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\ToolsHeader.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\Vector\Vector3.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Vector3</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\OGLPosition\OGLPosition.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\OGLPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\Bitmap\Bitmap.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Bitmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\Rotate\Rotate.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Rotate</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\CrossProduct\crossProduct.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\CrossProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\ProgressDialog\ProgressDialog.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Progress Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\obj_loader\obj_loader.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\OBJ Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\Font\Font.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\IsNumber\IsNumber.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\IsNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\StripName\StripName.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\StripName</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\FolderBrowser\FolderBrowser.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\FolderBrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Tools\Color\Color.h">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Color</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window.cpp">
+      <Filter>Header Files\MainNode\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectOperator.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\ObjectOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="Cubemap.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\Cubemap</Filter>
+    </ClCompile>
+    <ClCompile Include="Clouds.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\Clouds</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainEditor\ModelsOperator\ModelsOperator.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\Models Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainEditor\ModelsOperator\Model\Model.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\Models Operator\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TextOperator.cpp">
+      <Filter>Header Files\MainNode\TerrainEditor\TextOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\Vector\Vector3.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\OGLPosition\OGLPosition.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\OGLPosition</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\Bitmap\Bitmap.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Bitmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\Rotate\Rotate.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Rotate</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\CrossProduct\CrossProduct.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\CrossProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\ProgressDialog\ProgressDialog.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Progress Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\obj_loader\obj_loader.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\OBJ Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\Font\Font.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\IsNumber\IsNumber.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\IsNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\StripName\StripName.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\StripName</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\FolderBrowser\FolderBrowser.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\FolderBrowser</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Tools\Color\Color.cpp">
+      <Filter>Header Files\GlobalHeaders %28PCH%29\Utilities\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalHeaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Builder.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Builder.ico" />
+    <None Include="..\..\Kopie Buildera\Builder 36 ( zapis+odczyt map prawie 100% )\Builder\Builder.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+    <None Include="..\..\Kopie Buildera\Builder 36 ( zapis+odczyt map prawie 100% )\Builder\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="ObjectOperator.h">
+      <Filter>Header Files\MainNode\TerrainEditor\ObjectOperator</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

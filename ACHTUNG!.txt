@@ -1,0 +1,2 @@
+Jezeli folder "40 simulator" jest zagniezdzony w scieze, która posiada jakiekolwiek spacje, wyst¹pia b³edy 
+przy ³adowaniu plików!
