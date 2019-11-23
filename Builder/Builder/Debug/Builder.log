@@ -1,13 +1,320 @@
-﻿Build started 20/02/2012 21:15:37.
-     1>Project "D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder\Builder.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Touching "Debug\Builder.unsuccessfulbuild".
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"GlobalHeaders.h" /Fp"Debug\Builder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GlobalHeaders.cpp
-         GlobalHeaders.cpp
-     1>d:\śmiecie borowika\junk yard\c++ junkyard\! praca inzynierska - kod\builder\builder\globalheaders.h(70): fatal error C1083: Cannot open include file: 'cg\cg.h': No such file or directory
-     1>Done Building Project "D:\Śmiecie Borowika\Junk yard\C++ Junkyard\! Praca inzynierska - kod\Builder\Builder\Builder.vcxproj" (build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:00.85
+﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  GlobalHeaders.cpp
+C:\Python26\include\pymath.h(26,28): warning C4273:  'acosh': inconsistent dll linkage
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(489,47): message :  see previous definition of 'acosh'
+C:\Python26\include\pymath.h(30,28): warning C4273:  'asinh': inconsistent dll linkage
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(490,47): message :  see previous definition of 'asinh'
+C:\Python26\include\pymath.h(34,28): warning C4273:  'atanh': inconsistent dll linkage
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(491,47): message :  see previous definition of 'atanh'
+C:\Python26\include\pymath.h(38,28): warning C4273:  'log1p': inconsistent dll linkage
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(517,47): message :  see previous definition of 'log1p'
+  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  Builder.cpp
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(372,36): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(372,49): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(372,62): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(738,41): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(738,56): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+  Color.cpp
+  FolderBrowser.cpp
+  StripName.cpp
+  IsNumber.cpp
+  Font.cpp
+  obj_loader.cpp
+  ProgressDialog.cpp
+  CrossProduct.cpp
+  Rotate.cpp
+  Bitmap.cpp
+  OGLPosition.cpp
+  Vector3.cpp
+  TextOperator.cpp
+  Model.cpp
+  ModelsOperator.cpp
+  Clouds.cpp
+  Cubemap.cpp
+  ObjectOperator.cpp
+  Window.cpp
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Lights.h(738,71): warning C4838:  conversion from 'double' to 'float' requires a narrowing conversion
+  Generating Code...
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Window.cpp(165,3): warning C4838:  conversion from 'int' to 'BYTE' requires a narrowing conversion
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Utilities\Tools\obj_loader\obj_loader.cpp(115): warning C4715:  'OBJ_Loader::LoadOBJFile': not all control paths return a value
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Utilities\Tools\obj_loader\obj_loader.cpp(342): warning C4172:  returning address of local variable or temporary: texCoordData
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Utilities\Tools\obj_loader\obj_loader.cpp(324): warning C4172:  returning address of local variable or temporary: vertexData
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Utilities\Tools\obj_loader\obj_loader.cpp(362): warning C4172:  returning address of local variable or temporary: normalData
+E:\Workspace\Warhammer-40k-Simulator\Builder\Builder\Utilities\Tools\FolderBrowser\FolderBrowser.cpp(82): warning C4172:  returning address of local variable or temporary: directory
+Window.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+Window.obj : error LNK2019: unresolved external symbol __imp__ChoosePixelFormat@8 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__GetStockObject@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__SetPixelFormat@12 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__wglCreateContext@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__wglDeleteContext@4 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol __imp__wglMakeCurrent@8 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol __imp__UnregisterClassA@8 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol __imp__RegisterClassExA@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__CreateWindowExA@48 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__DestroyWindow@4 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__DestroyWindow@4
+Window.obj : error LNK2019: unresolved external symbol __imp__ShowWindow@8 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+ProgressDialog.obj : error LNK2001: unresolved external symbol __imp__ShowWindow@8
+Builder.obj : error LNK2001: unresolved external symbol __imp__ShowWindow@8
+Window.obj : error LNK2019: unresolved external symbol __imp__SetFocus@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__SetFocus@4
+Window.obj : error LNK2019: unresolved external symbol __imp__SetForegroundWindow@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__GetDC@4 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__ReleaseDC@8 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol __imp__AdjustWindowRectEx@16 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Window.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+ObjectOperator.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Clouds.obj : error LNK2001: unresolved external symbol __imp__MessageBoxA@16
+Window.obj : error LNK2019: unresolved external symbol __imp__ShowCursor@4 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+Window.obj : error LNK2019: unresolved external symbol __imp__LoadCursorA@8 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__LoadIconA@8 referenced in function "int __cdecl SetupWindow(char const *,int,int,int,bool)" (?SetupWindow@@YAHPBDHHH_N@Z)
+Window.obj : error LNK2019: unresolved external symbol __imp__ChangeDisplaySettingsA@8 referenced in function "int __cdecl KillWindow(void)" (?KillWindow@@YAHXZ)
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glBegin@4 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glBegin@4
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glColor3f@12 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glColor3f@12
+TextOperator.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+Builder.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+ObjectOperator.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glDisable@4
+TextOperator.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+Builder.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+ObjectOperator.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glEnable@4
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glEnd@0 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glEnd@0
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glLineWidth@4 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glLineWidth@4
+Builder.obj : error LNK2001: unresolved external symbol __imp__glPopMatrix@0
+ObjectOperator.obj : error LNK2001: unresolved external symbol __imp__glPopMatrix@0
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glPopMatrix@0
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glPopMatrix@0
+TextOperator.obj : error LNK2001: unresolved external symbol __imp__glPopMatrix@0
+Builder.obj : error LNK2001: unresolved external symbol __imp__glPushMatrix@0
+ObjectOperator.obj : error LNK2001: unresolved external symbol __imp__glPushMatrix@0
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glPushMatrix@0
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glPushMatrix@0
+TextOperator.obj : error LNK2001: unresolved external symbol __imp__glPushMatrix@0
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glTranslatef@12 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTranslatef@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glTranslatef@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTranslatef@12
+ObjectOperator.obj : error LNK2019: unresolved external symbol __imp__glVertex3f@12 referenced in function "public: void __thiscall ObjectOperator::Object::DrawFrame(void)" (?DrawFrame@Object@ObjectOperator@@QAEXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glVertex3f@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__SendMessageA@16
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__SendMessageA@16
+Clouds.obj : error LNK2001: unresolved external symbol __imp__SendMessageA@16
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__SendMessageA@16
+ProgressDialog.obj : error LNK2001: unresolved external symbol __imp__SendMessageA@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__GetDlgItem@8
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__GetDlgItem@8
+Clouds.obj : error LNK2001: unresolved external symbol __imp__GetDlgItem@8
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__GetDlgItem@8
+ProgressDialog.obj : error LNK2001: unresolved external symbol __imp__GetDlgItem@8
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__GetDlgItemInt@16 referenced in function "void __cdecl changeCubeMapColors(void)" (?changeCubeMapColors@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__GetDlgItemInt@16
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__GetDlgItemInt@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__GetDlgItemInt@16
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__GetWindowTextA@12 referenced in function "void __cdecl changeCubeMapTexture(void)" (?changeCubeMapTexture@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__GetWindowTextA@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__GetWindowTextA@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__GetWindowTextA@12
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__LoadImageA@24 referenced in function "void __cdecl changeCubeMapTexture(void)" (?changeCubeMapTexture@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__LoadImageA@24
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__LoadImageA@24
+Builder.obj : error LNK2001: unresolved external symbol __imp__LoadImageA@24
+Builder.obj : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+Cubemap.obj : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+Clouds.obj : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+FolderBrowser.obj : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glBindTexture@8 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glBindTexture@8
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glBindTexture@8
+Builder.obj : error LNK2001: unresolved external symbol __imp__glBindTexture@8
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glColorPointer@16 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glColorPointer@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__glColorPointer@16
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glDeleteTextures@8 referenced in function "void __cdecl removeCubeMapTextures(void)" (?removeCubeMapTextures@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glDeleteTextures@8
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glDeleteTextures@8
+Builder.obj : error LNK2001: unresolved external symbol __imp__glDeleteTextures@8
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glDisableClientState@4 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glDisableClientState@4
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glDisableClientState@4
+Builder.obj : error LNK2001: unresolved external symbol __imp__glDisableClientState@4
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glDrawArrays@12 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glDrawArrays@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glDrawArrays@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__glDrawArrays@12
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glEnableClientState@4 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glEnableClientState@4
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glEnableClientState@4
+Builder.obj : error LNK2001: unresolved external symbol __imp__glEnableClientState@4
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glGenTextures@8 referenced in function "unsigned int __cdecl generateCubeMapTexture(unsigned char *,unsigned int &,unsigned int &)" (?generateCubeMapTexture@@YAIPAEAAI1@Z)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glGenTextures@8
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glGenTextures@8
+Builder.obj : error LNK2001: unresolved external symbol __imp__glGenTextures@8
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glTexCoordPointer@16 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTexCoordPointer@16
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glTexCoordPointer@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTexCoordPointer@16
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glTexEnvf@12 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTexEnvf@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glTexEnvf@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTexEnvf@12
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glTexImage2D@36 referenced in function "unsigned int __cdecl generateCubeMapTexture(unsigned char *,unsigned int &,unsigned int &)" (?generateCubeMapTexture@@YAIPAEAAI1@Z)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTexImage2D@36
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTexImage2D@36
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glTexParameterf@12 referenced in function "unsigned int __cdecl generateCubeMapTexture(unsigned char *,unsigned int &,unsigned int &)" (?generateCubeMapTexture@@YAIPAEAAI1@Z)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTexParameterf@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glTexParameterf@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTexParameterf@12
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glTexParameteri@12 referenced in function "unsigned int __cdecl generateCubeMapTexture(unsigned char *,unsigned int &,unsigned int &)" (?generateCubeMapTexture@@YAIPAEAAI1@Z)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glTexParameteri@12
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glTexParameteri@12
+Builder.obj : error LNK2001: unresolved external symbol __imp__glTexParameteri@12
+Cubemap.obj : error LNK2019: unresolved external symbol __imp__glVertexPointer@16 referenced in function "void __cdecl drawCubeMap(void)" (?drawCubeMap@@YAXXZ)
+Clouds.obj : error LNK2001: unresolved external symbol __imp__glVertexPointer@16
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__glVertexPointer@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__glVertexPointer@16
+Clouds.obj : error LNK2019: unresolved external symbol __imp__SetDlgItemInt@16 referenced in function "bool __cdecl loadCloud(char *)" (?loadCloud@@YA_NPAD@Z)
+ModelsOperator.obj : error LNK2001: unresolved external symbol __imp__SetDlgItemInt@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__SetDlgItemInt@16
+Clouds.obj : error LNK2019: unresolved external symbol __imp__glDepthMask@4 referenced in function "void __cdecl drawCloud(void)" (?drawCloud@@YAXXZ)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glDepthMask@4
+ModelsOperator.obj : error LNK2019: unresolved external symbol __imp__GetParent@4 referenced in function __catch$?loadModel@ModelsOperator@@QAE_NPAD@Z$0
+Builder.obj : error LNK2001: unresolved external symbol __imp__GetParent@4
+ModelsOperator.obj : error LNK2019: unresolved external symbol __imp__glColor4f@16 referenced in function "public: static void __cdecl ModelsOperator::drawModel(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawModel@ModelsOperator@@SAXAAM00000PAX_N@Z)
+TextOperator.obj : error LNK2001: unresolved external symbol __imp__glColor4f@16
+Builder.obj : error LNK2001: unresolved external symbol __imp__glColor4f@16
+ModelsOperator.obj : error LNK2019: unresolved external symbol __imp__glNormalPointer@12 referenced in function "public: static void __cdecl ModelsOperator::drawModel(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawModel@ModelsOperator@@SAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glNormalPointer@12
+ModelsOperator.obj : error LNK2019: unresolved external symbol __imp__glRotatef@16 referenced in function "public: static void __cdecl ModelsOperator::drawModel(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawModel@ModelsOperator@@SAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glRotatef@16
+ModelsOperator.obj : error LNK2019: unresolved external symbol __imp__glScalef@12 referenced in function "public: static void __cdecl ModelsOperator::drawModel(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawModel@ModelsOperator@@SAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glScalef@12
+ModelsOperator.obj : error LNK2019: unresolved external symbol _gluBuild2DMipmaps@28 referenced in function "public: static unsigned int __cdecl ModelsOperator::generateModelTexture(unsigned char *,unsigned int &,unsigned int &)" (?generateModelTexture@ModelsOperator@@SAIPAEAAI1@Z)
+Builder.obj : error LNK2001: unresolved external symbol _gluBuild2DMipmaps@28
+TextOperator.obj : error LNK2019: unresolved external symbol __imp__glGetIntegerv@8 referenced in function "void __cdecl TextOperator(unsigned int)" (?TextOperator@@YAXI@Z)
+OGLPosition.obj : error LNK2001: unresolved external symbol __imp__glGetIntegerv@8
+Builder.obj : error LNK2001: unresolved external symbol __imp__glGetIntegerv@8
+TextOperator.obj : error LNK2019: unresolved external symbol __imp__glLoadIdentity@0 referenced in function "void __cdecl TextOperator(unsigned int)" (?TextOperator@@YAXI@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glLoadIdentity@0
+TextOperator.obj : error LNK2019: unresolved external symbol __imp__glMatrixMode@4 referenced in function "void __cdecl TextOperator(unsigned int)" (?TextOperator@@YAXI@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__glMatrixMode@4
+TextOperator.obj : error LNK2019: unresolved external symbol __imp__glRasterPos2f@8 referenced in function "void __cdecl TextOperator(unsigned int)" (?TextOperator@@YAXI@Z)
+TextOperator.obj : error LNK2019: unresolved external symbol _gluOrtho2D@32 referenced in function "void __cdecl TextOperator(unsigned int)" (?TextOperator@@YAXI@Z)
+OGLPosition.obj : error LNK2019: unresolved external symbol __imp__glGetDoublev@8 referenced in function "class Vector3 __cdecl GetOGLPos(int,int)" (?GetOGLPos@@YA?AVVector3@@HH@Z)
+OGLPosition.obj : error LNK2019: unresolved external symbol __imp__glReadPixels@28 referenced in function "class Vector3 __cdecl GetOGLPos(int,int)" (?GetOGLPos@@YA?AVVector3@@HH@Z)
+OGLPosition.obj : error LNK2019: unresolved external symbol _gluProject@48 referenced in function "class Vector3 __cdecl GetWindowPos(float,float,float)" (?GetWindowPos@@YA?AVVector3@@MMM@Z)
+OGLPosition.obj : error LNK2019: unresolved external symbol _gluUnProject@48 referenced in function "class Vector3 __cdecl GetOGLPos(int,int)" (?GetOGLPos@@YA?AVVector3@@HH@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_Unload@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_Load@12 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetFIFFromFilename@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_FIFSupportsReading@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetFileType@8 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetBits@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetWidth@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetHeight@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+Bitmap.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetColorType@4 referenced in function "unsigned int __cdecl LoadTexture(char const *,bool,unsigned int (__cdecl*)(unsigned char *,unsigned int &,unsigned int &),class Color)" (?LoadTexture@@YAIPBD_NP6AIPAEAAI3@ZVColor@@@Z)
+ProgressDialog.obj : error LNK2019: unresolved external symbol __imp__CreateDialogParamA@20 referenced in function "public: __thiscall ProgressDialog::ProgressDialog(struct HINSTANCE__ *,struct HWND__ *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,unsigned int,unsigned int,unsigned int)" (??0ProgressDialog@@QAE@PAUHINSTANCE__@@PAUHWND__@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@III@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__CreateDialogParamA@20
+ProgressDialog.obj : error LNK2019: unresolved external symbol __imp__EndDialog@8 referenced in function "public: __thiscall ProgressDialog::~ProgressDialog(void)" (??1ProgressDialog@@QAE@XZ)
+ProgressDialog.obj : error LNK2019: unresolved external symbol __imp__SetWindowTextA@8 referenced in function "public: __thiscall ProgressDialog::ProgressDialog(struct HINSTANCE__ *,struct HWND__ *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,unsigned int,unsigned int,unsigned int)" (??0ProgressDialog@@QAE@PAUHINSTANCE__@@PAUHWND__@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@III@Z)
+Builder.obj : error LNK2001: unresolved external symbol __imp__SetWindowTextA@8
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyCallable_Check referenced in function "public: bool __thiscall OBJ_Loader::Init(void)" (?Init@OBJ_Loader@@QAE_NXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyInt_AsLong referenced in function "public: struct OBJstruct * __thiscall OBJ_Loader::LoadOBJData(struct _object *)" (?LoadOBJData@OBJ_Loader@@QAEPAUOBJstruct@@PAU_object@@@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyFloat_AsDouble referenced in function "public: struct OBJstruct * __thiscall OBJ_Loader::LoadOBJData(struct _object *)" (?LoadOBJData@OBJ_Loader@@QAEPAUOBJstruct@@PAU_object@@@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyString_FromString referenced in function "public: struct _object * __thiscall OBJ_Loader::ExecutePythonLoadingScript(char const *)" (?ExecutePythonLoadingScript@OBJ_Loader@@QAEPAU_object@@PBD@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyString_AsString referenced in function "public: float * __thiscall OBJ_Loader::FromPoint_GetNormalData(struct _object *,struct _object *)" (?FromPoint_GetNormalData@OBJ_Loader@@QAEPAMPAU_object@@0@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyTuple_New referenced in function "public: struct _object * __thiscall OBJ_Loader::ExecutePythonLoadingScript(char const *)" (?ExecutePythonLoadingScript@OBJ_Loader@@QAEPAU_object@@PBD@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyTuple_SetItem referenced in function "public: struct _object * __thiscall OBJ_Loader::ExecutePythonLoadingScript(char const *)" (?ExecutePythonLoadingScript@OBJ_Loader@@QAEPAU_object@@PBD@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyList_GetItem referenced in function "public: float * __thiscall OBJ_Loader::FromPoint_GetNormalData(struct _object *,struct _object *)" (?FromPoint_GetNormalData@OBJ_Loader@@QAEPAMPAU_object@@0@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyDict_GetItemString referenced in function "public: bool __thiscall OBJ_Loader::Init(void)" (?Init@OBJ_Loader@@QAE_NXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyModule_GetDict referenced in function "public: bool __thiscall OBJ_Loader::Init(void)" (?Init@OBJ_Loader@@QAE_NXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__Py_Initialize referenced in function "public: bool __thiscall OBJ_Loader::Init(void)" (?Init@OBJ_Loader@@QAE_NXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__Py_Finalize referenced in function "public: void __thiscall OBJ_Loader::Close(void)" (?Close@OBJ_Loader@@QAEXXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyImport_Import referenced in function "public: bool __thiscall OBJ_Loader::Init(void)" (?Init@OBJ_Loader@@QAE_NXZ)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyObject_CallObject referenced in function "public: struct _object * __thiscall OBJ_Loader::ExecutePythonLoadingScript(char const *)" (?ExecutePythonLoadingScript@OBJ_Loader@@QAEPAU_object@@PBD@Z)
+obj_loader.obj : error LNK2019: unresolved external symbol __imp__PyObject_IsInstance referenced in function "public: bool __thiscall OBJ_Loader::ResultIsCorrect(struct _object *)" (?ResultIsCorrect@OBJ_Loader@@QAE_NPAU_object@@@Z)
+obj_loader.obj : error LNK2001: unresolved external symbol __imp__PyString_Type
+obj_loader.obj : error LNK2001: unresolved external symbol __imp__PyList_Type
+Font.obj : error LNK2019: unresolved external symbol __imp__CreateFontA@56 referenced in function "unsigned int __cdecl CreateBitmapFont(char *,bool,int,struct HDC__ *)" (?CreateBitmapFont@@YAIPAD_NHPAUHDC__@@@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__SelectObject@8 referenced in function "unsigned int __cdecl CreateBitmapFont(char *,bool,int,struct HDC__ *)" (?CreateBitmapFont@@YAIPAD_NHPAUHDC__@@@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__wglUseFontBitmapsA@16 referenced in function "unsigned int __cdecl CreateBitmapFont(char *,bool,int,struct HDC__ *)" (?CreateBitmapFont@@YAIPAD_NHPAUHDC__@@@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glCallLists@12 referenced in function "void __cdecl PrintString(unsigned int,char const *)" (?PrintString@@YAXIPBD@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glDeleteLists@8 referenced in function "void __cdecl ClearFont(unsigned int)" (?ClearFont@@YAXI@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glGenLists@4 referenced in function "unsigned int __cdecl CreateBitmapFont(char *,bool,int,struct HDC__ *)" (?CreateBitmapFont@@YAIPAD_NHPAUHDC__@@@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glListBase@4 referenced in function "void __cdecl PrintString(unsigned int,char const *)" (?PrintString@@YAXIPBD@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glPopAttrib@0 referenced in function "void __cdecl PrintString(unsigned int,char const *)" (?PrintString@@YAXIPBD@Z)
+Font.obj : error LNK2019: unresolved external symbol __imp__glPushAttrib@4 referenced in function "void __cdecl PrintString(unsigned int,char const *)" (?PrintString@@YAXIPBD@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__wglGetProcAddress@4 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__SwapBuffers@4 referenced in function "int __cdecl DisplayScene(void)" (?DisplayScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__TranslateMessage@4 referenced in function _WinMain@16
+Builder.obj : error LNK2019: unresolved external symbol __imp__DispatchMessageA@4 referenced in function _WinMain@16
+Builder.obj : error LNK2019: unresolved external symbol __imp__PeekMessageA@20 referenced in function _WinMain@16
+Builder.obj : error LNK2019: unresolved external symbol __imp__DefWindowProcA@16 referenced in function "long __stdcall WndProc(struct HWND__ *,unsigned int,unsigned int,long)" (?WndProc@@YGJPAUHWND__@@IIJ@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__PostQuitMessage@4 referenced in function "long __stdcall WndProc(struct HWND__ *,unsigned int,unsigned int,long)" (?WndProc@@YGJPAUHWND__@@IIJ@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__MoveWindow@24 referenced in function "long __stdcall WndProc(struct HWND__ *,unsigned int,unsigned int,long)" (?WndProc@@YGJPAUHWND__@@IIJ@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__EnableWindow@8 referenced in function "int __stdcall morphingProc(struct HWND__ *,unsigned int,unsigned int,long)" (?morphingProc@@YGHPAUHWND__@@IIJ@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__GetClientRect@8 referenced in function "long __stdcall WndProc(struct HWND__ *,unsigned int,unsigned int,long)" (?WndProc@@YGJPAUHWND__@@IIJ@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__IsDialogMessageA@8 referenced in function _WinMain@16
+Builder.obj : error LNK2019: unresolved external symbol __imp__GetOpenFileNameA@4 referenced in function "void __cdecl Load(void)" (?Load@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__GetSaveFileNameA@4 referenced in function "bool __cdecl SaveAs(void)" (?SaveAs@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glAlphaFunc@8 referenced in function "void __cdecl drawGrass(void)" (?drawGrass@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glBlendFunc@8 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glClear@4 referenced in function "int __cdecl DisplayScene(void)" (?DisplayScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glClearColor@16 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glClearDepth@8 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glColorMaterial@8 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glDepthFunc@4 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glDrawElements@16 referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glFlush@0 referenced in function "int __cdecl DisplayScene(void)" (?DisplayScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glFrontFace@4 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glGetString@4 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glHint@8 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glLightModelf@8 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glLightfv@12 referenced in function "void __cdecl corrigateLight(float &,float &,float &,float &,float &,float &,void *)" (?corrigateLight@@YAXAAM00000PAX@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glMaterialfv@12 referenced in function __catch$?InitLighting@@YAXXZ$2
+Builder.obj : error LNK2019: unresolved external symbol __imp__glNormal3fv@4 referenced in function "void __cdecl drawDetail(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawDetail@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glPointSize@4 referenced in function "bool __cdecl InitEditor(void)" (?InitEditor@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glShadeModel@4 referenced in function "int __cdecl InitializeScene(void)" (?InitializeScene@@YAHXZ)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glTexCoord2f@8 referenced in function "void __cdecl drawFlatDetail(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawFlatDetail@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glTexCoord2fv@4 referenced in function "void __cdecl drawDetail(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawDetail@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glVertex3fv@4 referenced in function "void __cdecl drawDetail(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawDetail@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol __imp__glViewport@16 referenced in function "void __cdecl ResizeScene(int,int)" (?ResizeScene@@YAXHH@Z)
+Builder.obj : error LNK2019: unresolved external symbol _gluPerspective@32 referenced in function "void __cdecl ResizeScene(int,int)" (?ResizeScene@@YAXHH@Z)
+Builder.obj : error LNK2019: unresolved external symbol _gluLookAt@72 referenced in function "public: void __thiscall Camera::run(void)" (?run@Camera@@QAEXXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgCreateContext referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgDestroyContext referenced in function "void __cdecl CloseLiquids(void)" (?CloseLiquids@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGetLastListing referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgCreateProgramFromFile referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGetNamedParameter referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgSetParameter1f referenced in function "bool __cdecl InitTerrain(void)" (?InitTerrain@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgSetParameter3f referenced in function "void __cdecl updateCGlightParams(void)" (?updateCGlightParams@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGetError referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLEnableProfile referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLDisableProfile referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLGetLatestProfile referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLSetOptimalOptions referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLLoadProgram referenced in function "bool __cdecl InitLiquids(void)" (?InitLiquids@@YA_NXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLBindProgram referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLSetParameter1f referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLSetParameter4f referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLSetStateMatrixParameter referenced in function "void __cdecl drawLiquid(float &,float &,float &,float &,float &,float &,void *,bool)" (?drawLiquid@@YAXAAM00000PAX_N@Z)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLSetTextureParameter referenced in function "void __cdecl drawTerrain(void)" (?drawTerrain@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLEnableTextureParameter referenced in function "void __cdecl drawTerrain(void)" (?drawTerrain@@YAXXZ)
+Builder.obj : error LNK2019: unresolved external symbol _cgGLDisableTextureParameter referenced in function "void __cdecl drawTerrain(void)" (?drawTerrain@@YAXXZ)
+C:\Python26\libs\python26.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Program Files (x86)\NVIDIA Corporation\Cg\lib.x64\cg.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Program Files (x86)\NVIDIA Corporation\Cg\lib.x64\cggl.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+E:\Workspace\Warhammer-40k-Simulator\Builder\Debug\Builder.exe : fatal error LNK1120: 162 unresolved externals
