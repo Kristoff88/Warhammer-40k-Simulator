@@ -2845,7 +2845,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		{
 		// generowanie glownego dialog box'a
 
-			dialog = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TOOLBOX), hwnd, ToolDlgProc);
+			dialog = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TOOLBOX), hwnd, (DLGPROC)ToolDlgProc);
 
 			if(!dialog)
 				MessageBox(hwnd, "Nie zaladowano dialogu ToolBox!", "Ops!", MB_OK);
@@ -2854,7 +2854,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 		// generowanie nizszych dialog box'ow
 
-			lighting = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_LIGHTING), dialog, lightingProc);
+			lighting = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_LIGHTING), dialog, (DLGPROC)lightingProc);
 
 			if( !lighting )
 				MessageBox(hwnd, "Nie zaladowano dialogu Lighting!", "Ops!", MB_OK);
@@ -2862,7 +2862,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(lighting, SW_SHOW);
 
 
-			liquids = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_LIQUIDS), dialog, liquidsProc);
+			liquids = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_LIQUIDS), dialog, (DLGPROC)liquidsProc);
 
 			if( !liquids )
 				MessageBox(hwnd, "Nie zaladowano dialogu Liquids!", "Ops!", MB_OK);
@@ -2870,7 +2870,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(liquids, SW_HIDE);
 
 
-			morphing = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_MORPHING), dialog, morphingProc);
+			morphing = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_MORPHING), dialog, (DLGPROC)morphingProc);
 
 			if( !morphing )
 				MessageBox(hwnd, "Nie zaladowano dialogu Morphing!", "Ops!", MB_OK);
@@ -2878,7 +2878,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(morphing, SW_HIDE);
 
 
-			terrain = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TERRAIN), dialog, terrainProc);
+			terrain = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TERRAIN), dialog, (DLGPROC)terrainProc);
 
 			if( !terrain )
 				MessageBox(hwnd, "Nie zaladowano dialogu Terrain!", "Ops!", MB_OK);
@@ -2886,7 +2886,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(terrain, SW_HIDE);
 
 
-			textures = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TEXTURES), dialog, texturesProc);
+			textures = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_TEXTURES), dialog, (DLGPROC)texturesProc);
 
 			if( !textures )
 				MessageBox(hwnd, "Nie zaladowano dialogu Textures!", "Ops!", MB_OK);
@@ -2894,7 +2894,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(textures, SW_HIDE);
 
 
-			details = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_DETAILS), dialog, detailsProc);
+			details = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_DETAILS), dialog, (DLGPROC)detailsProc);
 
 			if( !details )
 				MessageBox(hwnd, "Nie zaladowano dialogu Details!", "Ops!", MB_OK);
@@ -2902,7 +2902,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(details, SW_HIDE);
 
 
-			grass = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_GRASS), dialog, grassProc);
+			grass = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_GRASS), dialog, (DLGPROC)grassProc);
 
 			if( !grass )
 				MessageBox(hwnd, "Nie zaladowano dialogu Grass!", "Ops!", MB_OK);
@@ -2910,7 +2910,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(grass, SW_HIDE);
 
 
-			modelsOperator.models = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_MODELS), dialog, modelsProc);
+			modelsOperator.models = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_MODELS), dialog, (DLGPROC)modelsProc);
 
 			if( !modelsOperator.models )
 				MessageBox(hwnd, "Nie zaladowano dialogu Models!", "Ops!", MB_OK);
@@ -2918,7 +2918,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(modelsOperator.models, SW_HIDE);
 
 
-			cubemap = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_CUBEMAP), dialog, cubemapProc);
+			cubemap = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_CUBEMAP), dialog, (DLGPROC)cubemapProc);
 
 			if( !cubemap )
 				MessageBox(hwnd, "Nie zaladowano dialogu Cubemap!", "Ops!", MB_OK);
@@ -2926,7 +2926,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				ShowWindow(cubemap, SW_HIDE);
 
 
-			cloud = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_CLOUD), dialog, cloudProc);
+			cloud = CreateDialog(g_hInstance, MAKEINTRESOURCE(IDD_CLOUD), dialog, (DLGPROC)cloudProc);
 
 			if( !cloud )
 				MessageBox(hwnd, "Nie zaladowano dialogu Cloud!", "Ops!", MB_OK);
