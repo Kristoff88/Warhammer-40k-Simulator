@@ -1,13 +1,9 @@
 #pragma once
 
-
-
-class Vector3
+struct Vector3
 {
-	public:	
+	Vector3();
+	Vector3(double x, double y, double z);
 
-		double posX, posY, posZ;
-
-		Vector3();
-		Vector3(double x, double y, double z);
+	double posX, posY, posZ;
 };
