@@ -1,99 +1,88 @@
 #pragma once
 
+#ifdef _DEBUG
+#undef _DEBUG
+#include <Python.h>
+#define _DEBUG
+#else
+#include <Python.h>
+#endif
 
 
-	#ifdef _DEBUG
-	#undef _DEBUG
-	#include <Python.h>
-	#define _DEBUG
-	#else
-	#include <Python.h>
-	#endif
+/*
+	NOTE: Loader assumes that loaded models consist of triangles.
+*/
+
+#define MODULE_PATH    "OBJ_Loader_Module"
+#define FUNCTION_NAME  "LoadOBJ"
 
 
-	/*
-		NOTE: Loader assumes that loaded models consist of triangles.
-	*/
+struct OBJstruct
+{
+	std::vector <unsigned int> indexCounters;
+	std::vector <std::string> textures;
+
+	float(*vertices)[3],
+		(*texCoords)[2],
+		(*colors)[3],
+		(*normals)[3];
+
+	int vertexCount,
+		texCoordCount,
+		normalCount;
 
 
-	#define MODULE_PATH    "OBJ_Loader_Module"
-	#define FUNCTION_NAME  "LoadOBJ"
+	OBJstruct();
+	~OBJstruct();
+
+	void CleanUp();
+};
 
 
-	
+class OBJ_Loader
+{
+public:
 
-	struct OBJstruct
+	static OBJ_Loader& Singleton()
 	{
-		std::vector <unsigned int> indexCounters;
-		std::vector <std::string> textures;
+		static OBJ_Loader s;
+		return s;
+	}
 
-		float (*vertices)[3],
-			  (*texCoords)[2],
-			  (*colors)[3],
-			  (*normals)[3];
+	bool Init();
+	void Close();
 
-		int vertexCount,
-			texCoordCount,
-			normalCount;
+	OBJstruct* LoadOBJFile(const char* filename) throw(std::string);
 
+	inline PyObject* ExecutePythonLoadingScript(const char* filename);
 
-		OBJstruct  ();
-		~OBJstruct ();
+	inline bool ResultIsErrorInfo(PyObject* pResult);
+	inline void ThrowErrorInfo(PyObject* pResult) throw(std::string);
 
-		void CleanUp ();
-	};
-//
-
-	class OBJ_Loader
-	{
-		public:
-
-			static OBJ_Loader& Singleton()
-			{  
-				static OBJ_Loader s;    
-				return s; 
-			}
-		//		
-
-			bool Init  ();
-			void Close ();
+	inline bool ResultIsCorrect(PyObject* pResult);
 
 
-			OBJstruct* LoadOBJFile (const char *filename) throw( std::string );
+	inline OBJstruct* LoadOBJData(PyObject* pResult);
 
-			inline PyObject* ExecutePythonLoadingScript (const char *filename);
+	inline OBJstruct* GenerateEmptyObject(int const& arraySize, bool const& ObjectHasNormals);
 
-			inline bool ResultIsErrorInfo (PyObject *pResult);
-			inline void ThrowErrorInfo    (PyObject *pResult) throw( std::string );
+	inline float** lol();
+	inline float* FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint);
+	inline int    FromPoint_GetVertexIndex(PyObject* pPoint);
 
-			inline bool ResultIsCorrect (PyObject *pResult);
+	inline float* FromPoint_GetTexCoordData(PyObject* pTexCoordArray, PyObject* pPoint);
+	inline int    FromPoint_GetTexCoordIndex(PyObject* pPoint);
 
+	inline float* FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPoint);
+	inline int    FromPoint_GetNormalIndex(PyObject* pPoint);
 
-			inline OBJstruct* LoadOBJData (PyObject *pResult);
+	inline void InformAboutUnexpectedResult(const char* filename) throw(std::string);
 
-				inline OBJstruct* GenerateEmptyObject (int const &arraySize, bool const &ObjectHasNormals);
+private:
 
-				inline float** lol();
-				inline float* FromPoint_GetVertexData   (PyObject *pVertexArray, PyObject *pPoint);
-				inline int    FromPoint_GetVertexIndex  (PyObject *pPoint);
+	// Wskaznik na funkcje FUNCTION_NAME z modulu MODULE_PATH.
+	PyObject* OBJLoader;
 
-				inline float* FromPoint_GetTexCoordData  (PyObject *pTexCoordArray, PyObject *pPoint);
-				inline int    FromPoint_GetTexCoordIndex (PyObject *pPoint);
-
-				inline float* FromPoint_GetNormalData   (PyObject *pNormalArray, PyObject *pPoint);
-				inline int    FromPoint_GetNormalIndex  (PyObject *pPoint);
-
-				
-				
-			inline void InformAboutUnexpectedResult (const char *filename) throw( std::string );
-
-		private:
-
-			// Wskaznik na funkcje FUNCTION_NAME z modulu MODULE_PATH.
-			PyObject *OBJLoader;
-
-			OBJ_Loader  ();
-			~OBJ_Loader ();
-	};
-
-
+	OBJ_Loader();
+	~OBJ_Loader();
+};
