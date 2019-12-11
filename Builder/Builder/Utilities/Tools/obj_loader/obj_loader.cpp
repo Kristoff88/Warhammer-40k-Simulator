@@ -91,7 +91,6 @@ OBJstruct* OBJ_Loader::LoadOBJFile(const char* filename) throw(std::string)
 {
 	PyObject* pResult = ExecutePythonLoadingScript(filename);
 
-
 	if (ResultIsCorrect(pResult))
 	{
 		OBJstruct* newOBJ = LoadOBJData(pResult);
@@ -101,20 +100,21 @@ OBJstruct* OBJ_Loader::LoadOBJFile(const char* filename) throw(std::string)
 	}
 	else if (ResultIsErrorInfo(pResult))
 	{
-		ThrowErrorInfo(pResult);
 		Py_DECREF(pResult);
+		ThrowErrorInfo(pResult);
 	}
 	else
 	{
 		Py_DECREF(pResult);
 		InformAboutUnexpectedResult(filename);
 	}
+
+	return nullptr;
 }
 
 PyObject* OBJ_Loader::ExecutePythonLoadingScript(const char* filename)
 {
 	PyObject* pFileName, * pArg, * pResult;
-
 
 	pFileName = PyString_FromString(filename);
 
@@ -122,7 +122,6 @@ PyObject* OBJ_Loader::ExecutePythonLoadingScript(const char* filename)
 	PyTuple_SetItem(pArg, 0, pFileName);
 
 	pResult = PyObject_CallObject(OBJLoader, pArg);
-
 
 	Py_DECREF(pFileName);
 	Py_DECREF(pArg);

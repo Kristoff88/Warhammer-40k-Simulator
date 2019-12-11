@@ -78,7 +78,6 @@ public:
 	inline void InformAboutUnexpectedResult(const char* filename) throw(std::string);
 
 private:
-
 	// Wskaznik na funkcje FUNCTION_NAME z modulu MODULE_PATH.
 	PyObject* OBJLoader;
 
