@@ -25,7 +25,7 @@
 	Tworzy okno, kontekst urz¹dzenia oraz kontekst tworzenia grafiki.
 *****************************************************************************/
 
-	BOOL SetupWindow(const char *title, int width, int height, int bits, bool isFullscreen)
+	BOOL SetupWindow(const char *title, int width, int height, BYTE bits, bool isFullscreen)
 	{
 	// ustawia globalny znacznik
 

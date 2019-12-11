@@ -1,6 +1,6 @@
 #pragma once
 
-
+#include "TerrainEditor.h"
 
 /*****************************************************************************
 	Wywo³ywana podczas startu aplikacji i za ka¿dym razem, gdy u¿ytkownik
