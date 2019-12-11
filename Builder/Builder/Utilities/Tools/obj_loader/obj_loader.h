@@ -66,7 +66,6 @@ public:
 
 	inline OBJstruct* GenerateEmptyObject(int const& arraySize, bool const& ObjectHasNormals);
 
-	inline float** lol();
 	inline float* FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint);
 	inline int    FromPoint_GetVertexIndex(PyObject* pPoint);
 
