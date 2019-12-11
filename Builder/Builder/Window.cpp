@@ -2,6 +2,8 @@
 
 	#include "Window.h"
 
+#include <wingdi.h>
+
 
 // zewnetrzne zmienne oraz funkcje
 
