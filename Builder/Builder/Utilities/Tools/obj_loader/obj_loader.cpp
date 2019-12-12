@@ -190,25 +190,24 @@ OBJstruct* OBJ_Loader::LoadOBJData(PyObject* pResult)
 		{
 			PyObject* pPoint = PyList_GetItem(pFace, point);
 
+			const Data3D vertexData = FromPoint_GetVertexData(pVertexArray, pPoint);
 
-			float* vertexData = FromPoint_GetVertexData(pVertexArray, pPoint);
+			newOBJ->vertices[i][0] = vertexData.x;
+			newOBJ->vertices[i][1] = vertexData.y;
+			newOBJ->vertices[i][2] = vertexData.z;
 
-			newOBJ->vertices[i][0] = vertexData[0];
-			newOBJ->vertices[i][1] = vertexData[1];
-			newOBJ->vertices[i][2] = vertexData[2];
+			const Data2D texCoordData = FromPoint_GetTexCoordData(pTexCoordArray, pPoint);
 
-			float* texCoordData = FromPoint_GetTexCoordData(pTexCoordArray, pPoint);
-
-			newOBJ->texCoords[i][0] = texCoordData[0];
-			newOBJ->texCoords[i][1] = texCoordData[1];
+			newOBJ->texCoords[i][0] = texCoordData.x;
+			newOBJ->texCoords[i][1] = texCoordData.z;
 
 			if (ObjectHasNormals)
 			{
-				float* normalData = FromPoint_GetNormalData(pNormalArray, pPoint);
+				const Data3D normalData = FromPoint_GetNormalData(pNormalArray, pPoint);
 
-				newOBJ->normals[i][0] = normalData[0];
-				newOBJ->normals[i][1] = normalData[1];
-				newOBJ->normals[i][2] = normalData[2];
+				newOBJ->normals[i][0] = normalData.x;
+				newOBJ->normals[i][1] = normalData.y;
+				newOBJ->normals[i][2] = normalData.z;
 			}
 		}
 	}
@@ -282,38 +281,28 @@ int OBJ_Loader::FromPoint_GetNormalIndex(PyObject* pPoint)
 	return atoi(vn) - 1;
 }
 
-float* OBJ_Loader::FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint)
+OBJ_Loader::Data3D OBJ_Loader::FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint)
 {
 	unsigned int vertexIndex = FromPoint_GetVertexIndex(pPoint);
 
-	char* x = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 0)),
-		* y = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 1)),
-		* z = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 2));
+	char* x = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 0));
+	char* y = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 1));
+	char* z = PyString_AsString(PyList_GetItem(PyList_GetItem(pVertexArray, vertexIndex), 2));
 
+	return Data3D{ atof(x), atof(y), atof(z) };
+};
 
-	float vertexData[3];
-	vertexData[0] = atof(x);
-	vertexData[1] = atof(y);
-	vertexData[2] = atof(z);
-
-	return vertexData;
-}
-
-float* OBJ_Loader::FromPoint_GetTexCoordData(PyObject* pTexCoordArray, PyObject* pPoint)
+OBJ_Loader::Data2D OBJ_Loader::FromPoint_GetTexCoordData(PyObject* pTexCoordArray, PyObject* pPoint)
 {
 	unsigned int texCoordIndex = FromPoint_GetTexCoordIndex(pPoint);
 
 	char* x = PyString_AsString(PyList_GetItem(PyList_GetItem(pTexCoordArray, texCoordIndex), 0)),
 		* z = PyString_AsString(PyList_GetItem(PyList_GetItem(pTexCoordArray, texCoordIndex), 1));
 
-	float texCoordData[2];
-	texCoordData[0] = atof(x);
-	texCoordData[1] = atof(z);
-
-	return texCoordData;
+	return Data2D{ atof(x), atof(z) };
 }
 
-float* OBJ_Loader::FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPoint)
+OBJ_Loader::Data3D OBJ_Loader::FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPoint)
 {
 	unsigned int normalIndex = FromPoint_GetNormalIndex(pPoint);
 
@@ -321,14 +310,7 @@ float* OBJ_Loader::FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPo
 		* y = PyString_AsString(PyList_GetItem(PyList_GetItem(pNormalArray, normalIndex), 1)),
 		* z = PyString_AsString(PyList_GetItem(PyList_GetItem(pNormalArray, normalIndex), 2));
 
-
-	float normalData[3];
-
-	normalData[0] = atof(x);
-	normalData[1] = atof(y);
-	normalData[2] = atof(z);
-
-	return normalData;
+	return Data3D{ atof(x), atof(y), atof(z) };
 }
 
 void OBJ_Loader::InformAboutUnexpectedResult(const char* filename) throw(std::string)
