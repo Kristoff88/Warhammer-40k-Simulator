@@ -10,7 +10,6 @@ OBJstruct::~OBJstruct()
 	CleanUp();
 }
 
-//
 void OBJstruct::CleanUp()
 {
 	if (vertices != NULL)
@@ -38,18 +37,13 @@ void OBJstruct::CleanUp()
 	}
 }
 
-//
-/*************************************************************/
-
 bool OBJ_Loader::Init()
 {
 	// Inicjalizuje interpreter python'a.
 	Py_Initialize();
 
-
 	// Sciezka do modulu, modul oraz jego slownik (przestrzen nazw).
 	PyObject* pModulePath, * pModule, * pDict;
-
 
 	pModulePath = PyString_FromString(MODULE_PATH);
 	pModule = PyImport_Import(pModulePath);
@@ -145,7 +139,6 @@ bool OBJ_Loader::ResultIsCorrect(PyObject* pResult)
 	return PyObject_IsInstance(pResult, (PyObject*)& PyList_Type);
 }
 
-
 OBJstruct* OBJ_Loader::LoadOBJData(PyObject* pResult)
 {
 	PyObject* pVertexCount = PyList_GetItem(pResult, 0),
@@ -238,7 +231,7 @@ OBJstruct* OBJ_Loader::LoadOBJData(PyObject* pResult)
 
 	return newOBJ;
 }
-//
+
 OBJstruct* OBJ_Loader::GenerateEmptyObject(int const& arraySize, bool const& ObjectHasNormals)
 {
 	OBJstruct* newOBJ = new OBJstruct;
@@ -335,7 +328,6 @@ float* OBJ_Loader::FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPo
 	normalData[1] = atof(y);
 	normalData[2] = atof(z);
 
-
 	return normalData;
 }
 
@@ -350,14 +342,12 @@ void OBJ_Loader::InformAboutUnexpectedResult(const char* filename) throw(std::st
 
 	throw result;
 }
-//
-/*************************************************************/
 
 OBJ_Loader::OBJ_Loader()
 {}
+
 OBJ_Loader::~OBJ_Loader()
 {}
-
 
 #undef MODULE_PATH
 #undef FUNCTION_NAME

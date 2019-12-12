@@ -19,8 +19,8 @@
 
 struct OBJstruct
 {
-	std::vector <unsigned int> indexCounters;
-	std::vector <std::string> textures;
+	std::vector<unsigned int> indexCounters;
+	std::vector<std::string> textures;
 
 	float(*vertices)[3],
 		(*texCoords)[2],
@@ -30,7 +30,6 @@ struct OBJstruct
 	int vertexCount,
 		texCoordCount,
 		normalCount;
-
 
 	OBJstruct();
 	~OBJstruct();
@@ -53,7 +52,7 @@ public:
 	void Close();
 
 	OBJstruct* LoadOBJFile(const char* filename) throw(std::string);
-
+private:
 	inline PyObject* ExecutePythonLoadingScript(const char* filename);
 
 	inline bool ResultIsErrorInfo(PyObject* pResult);
@@ -62,22 +61,21 @@ public:
 	inline bool ResultIsCorrect(PyObject* pResult);
 
 
-	inline OBJstruct* LoadOBJData(PyObject* pResult);
+	OBJstruct* LoadOBJData(PyObject* pResult);
 
-	inline OBJstruct* GenerateEmptyObject(int const& arraySize, bool const& ObjectHasNormals);
+	OBJstruct* GenerateEmptyObject(int const& arraySize, bool const& ObjectHasNormals);
 
-	inline float* FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint);
-	inline int    FromPoint_GetVertexIndex(PyObject* pPoint);
+	float* FromPoint_GetVertexData(PyObject* pVertexArray, PyObject* pPoint);
+	int    FromPoint_GetVertexIndex(PyObject* pPoint);
 
-	inline float* FromPoint_GetTexCoordData(PyObject* pTexCoordArray, PyObject* pPoint);
-	inline int    FromPoint_GetTexCoordIndex(PyObject* pPoint);
+	float* FromPoint_GetTexCoordData(PyObject* pTexCoordArray, PyObject* pPoint);
+	int    FromPoint_GetTexCoordIndex(PyObject* pPoint);
 
-	inline float* FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPoint);
-	inline int    FromPoint_GetNormalIndex(PyObject* pPoint);
+	float* FromPoint_GetNormalData(PyObject* pNormalArray, PyObject* pPoint);
+	int    FromPoint_GetNormalIndex(PyObject* pPoint);
 
-	inline void InformAboutUnexpectedResult(const char* filename) throw(std::string);
+	void InformAboutUnexpectedResult(const char* filename) throw(std::string);
 
-private:
 	// Wskaznik na funkcje FUNCTION_NAME z modulu MODULE_PATH.
 	PyObject* OBJLoader;
 
