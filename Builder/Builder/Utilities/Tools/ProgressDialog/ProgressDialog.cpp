@@ -1,55 +1,45 @@
-#include "GlobalHeaders.h"
-
+#include <GlobalHeaders.h>
 #include "ProgressDialog.h"
 
 
+ProgressDialog::ProgressDialog(HINSTANCE instance, HWND hwnd, std::string name, size_t minRange, size_t maxRange, size_t incrementLevel)
+	: incrementLVL(incrementLevel)
+{
 
+	// stworzenie dialog box'a pokazujacego postep plantowania trawy
 
-	ProgressDialog::ProgressDialog(HINSTANCE instance, HWND hwnd, std::string name, unsigned int minRange, unsigned int maxRange, unsigned int incrementLevel)
-	 : incrementLVL(incrementLevel)
-	{
+	DialogBox = CreateDialog(instance, MAKEINTRESOURCE(IDD_PROGRESS_DIALOG), hwnd, NULL);
 
-		// stworzenie dialog box'a pokazujacego postep plantowania trawy
+	// ustawienie paska tytulowego
 
-			DialogBox = CreateDialog(instance, MAKEINTRESOURCE(IDD_PROGRESS_DIALOG), hwnd, NULL);
+	SetWindowText(DialogBox, name.c_str());
 
-		// ustawienie paska tytulowego
+	// pokazanie okna
 
-			SetWindowText(DialogBox, name.c_str());
+	ShowWindow(DialogBox, SW_SHOW);
 
-		// pokazanie okna
+	// ustawienie handlera paska postepu
 
-			ShowWindow(DialogBox, SW_SHOW);
+	progressBar = GetDlgItem(DialogBox, IDC_PROGRESS_BAR);
 
-		// ustawienie handlera paska postepu
+	// przyszykowanie progress bara
 
-			progressBar = GetDlgItem(DialogBox, IDC_PROGRESS_BAR);
+	SendMessageA(progressBar, PBM_SETRANGE32, minRange, maxRange);
+	SendMessageA(progressBar, PBM_SETPOS, TRUE, 0);
 
-		// przyszykowanie progress bara
+}
 
-			SendMessageA(progressBar, PBM_SETRANGE32,  minRange, maxRange);
-			SendMessageA(progressBar, PBM_SETPOS, TRUE, 0);
+ProgressDialog::~ProgressDialog(void)
+{
+	EndDialog(DialogBox, TRUE);
+}
 
-	}
+void ProgressDialog::Increment()
+{
+	SendMessageA(progressBar, PBM_DELTAPOS, incrementLVL, 0);
+}
 
-
-	ProgressDialog::~ProgressDialog(void)
-	{
-		EndDialog(DialogBox, TRUE);
-	}
-
-
-
-
-
-	// Increment
-
-	void ProgressDialog::Increment()
-	{
-		SendMessageA(progressBar, PBM_DELTAPOS, incrementLVL, 0);
-	}
-
-	void ProgressDialog::SetCaption(std::string caption)
-	{
-		SetWindowText(DialogBox, caption.c_str());
-	}
+void ProgressDialog::SetCaption(std::string caption)
+{
+	SetWindowText(DialogBox, caption.c_str());
+}

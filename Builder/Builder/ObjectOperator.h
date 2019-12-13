@@ -131,7 +131,7 @@
 
 			struct range
 			{
-				unsigned int firstIndex, lastIndex;
+				size_t firstIndex, lastIndex;
 			};
 			std::vector <range> typeIndices; // wektor przechowujacy indeksy obiektow danych typow (w objectArray)
 

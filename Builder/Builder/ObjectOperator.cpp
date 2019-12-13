@@ -569,7 +569,7 @@
 						 zBorder = MAP_Z*MAP_SCALE;
 
 
-			unsigned int workTime = objectArray.size();
+			size_t workTime = objectArray.size();
 
 			ProgressDialog progressDlg(g_hInstance, dialog, "Deleting objects...",
 									   0, workTime, 1);
@@ -793,7 +793,7 @@
 				{
 
 					// rysowanie wszystkich obiektow danego typu
-					for(int objectIdx = typeIndices[typeIdx].firstIndex; 
+					for(size_t objectIdx = typeIndices[typeIdx].firstIndex; 
 						objectIdx <= typeIndices[typeIdx].lastIndex; 
 						objectIdx++)
 					{
