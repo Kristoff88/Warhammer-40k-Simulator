@@ -1,34 +1,33 @@
 #pragma once
 
+#include <string>
+#include <vector>
 
+#include <winnt.h>
 
-	class FolderBrowser
+class FolderBrowser
+{
+public:
+	static FolderBrowser& Singleton()
 	{
-		public:
+		static FolderBrowser s;
+		return s;
+	}
 
-			static FolderBrowser& Singleton()
-			{
-				static FolderBrowser s;
-				return s;
-			}
-			//
-
-			std::string GetApplicationPath ();
+	std::string GetApplicationPath();
 
 
-			std::vector <std::string> GetFolderList (std::string locationPath);
-				private:
-				inline HANDLE& PassThroughParentDirectory (std::string const &locationPath);
+	std::vector <std::string> GetFolderList(std::string locationPath);
+private:
+	inline HANDLE& PassThroughParentDirectory(std::string const& locationPath);
 
-				inline bool FoundItemIsFolder  (WIN32_FIND_DATAA const &folderData);
-				inline bool ReachedEndOfFolder (std::vector <std::string> const &folderList, WIN32_FIND_DATAA const &folderData);
-			public:
+	inline bool FoundItemIsFolder(WIN32_FIND_DATAA const& folderData);
+	inline bool ReachedEndOfFolder(std::vector <std::string> const& folderList, WIN32_FIND_DATAA const& folderData);
+public:
 
+	std::vector<std::string> GetFileList(std::string locationPath, std::string extension);
 
-			std::vector <std::string> GetFileList (std::string locationPath, std::string extension);
+private:
 
-
-			private:
-
-				inline bool LocationPathDoesntHaveEndingSlash (std::string const &locationPath);
-	};
+	inline bool LocationPathDoesntHaveEndingSlash(std::string const& locationPath);
+};

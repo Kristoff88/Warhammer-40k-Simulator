@@ -36,8 +36,6 @@
 
 		directory = PassThroughParentDirectory(locationPath);
 
-
-		
 		bool FoundFolder = false;
 
 		do
