@@ -1,6 +1,0 @@
-Please, don't put spaces in texture names, or they may be abnormalities in texture loading.
-
-Also remember that texture sizes must be a power of 2 or else some graphic cards might be unable to 
-process them properly.
-
-Supported texture formats: BMP, JPG, TGA.

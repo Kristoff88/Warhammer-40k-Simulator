@@ -2,13 +2,13 @@
 
 
 /*****************************************************************************
-	Tworzy okno, kontekst urz¹dzenia oraz kontekst tworzenia grafiki.
+	Tworzy okno, kontekst urzadzenia oraz kontekst tworzenia grafiki.
 *****************************************************************************/
 
-	BOOL SetupWindow(const char *title, int width, int height, int bits, bool isFullscreen);
+	BOOL SetupWindow(const char *title, int width, int height, BYTE bits, bool isFullscreen);
 
 /*****************************************************************************
-	Przywraca wyjœciowy tryb wyœwietlania. Usuwa okno, kontekst urz¹dzenia 
+	Przywraca wyjœciowy tryb wyœwietlania. Usuwa okno, kontekst urzadzenia 
 	i kontekst tworzenia grafiki.
 *****************************************************************************/
 

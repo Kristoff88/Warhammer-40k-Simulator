@@ -83,9 +83,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MainNode.h">
-      <Filter>Header Files\MainNode</Filter>
-    </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Header Files\MainNode</Filter>
     </ClInclude>
