@@ -1,4 +1,11 @@
-#include "GlobalHeaders.h"
+#include <fileapi.h>
+#include <handleapi.h>
+#include <minwinbase.h>
+#include <minwindef.h>
+#include <processenv.h>
+#include <shellapi.h>
+
+#include <GlobalHeaders.h>
 #include "FolderBrowser.h"
 
 std::string FolderBrowser::GetApplicationPath()
@@ -18,7 +25,6 @@ std::string FolderBrowser::GetApplicationPath()
 std::vector <std::string> FolderBrowser::GetFolderList(std::string locationPath)
 {
 	std::vector <std::string> folderList;
-	HANDLE directory;
 	WIN32_FIND_DATAA folderData;
 
 	if (LocationPathDoesntHaveEndingSlash(locationPath))
@@ -26,7 +32,7 @@ std::vector <std::string> FolderBrowser::GetFolderList(std::string locationPath)
 		locationPath.push_back('\\');
 	}
 
-	directory = PassThroughParentDirectory(locationPath);
+	HANDLE directory = PassThroughParentDirectory(locationPath);
 
 	bool FoundFolder = false;
 
@@ -53,13 +59,12 @@ std::vector <std::string> FolderBrowser::GetFolderList(std::string locationPath)
 	return folderList;
 }
 
-HANDLE& FolderBrowser::PassThroughParentDirectory(std::string const& locationPath)
+HANDLE FolderBrowser::PassThroughParentDirectory(std::string const& locationPath)
 {
 	HANDLE directory;
 	WIN32_FIND_DATAA folderData;
 
 	std::string firstFile;
-
 	firstFile = locationPath;
 	firstFile += "*.*";
 

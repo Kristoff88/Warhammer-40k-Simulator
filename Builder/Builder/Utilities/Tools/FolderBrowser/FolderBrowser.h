@@ -19,7 +19,7 @@ public:
 	std::vector<std::string> GetFileList(std::string locationPath, std::string extension);
 
 private:
-	HANDLE& PassThroughParentDirectory(std::string const& locationPath);
+	HANDLE PassThroughParentDirectory(std::string const& locationPath);
 	bool FoundItemIsFolder(WIN32_FIND_DATAA const& folderData);
 	bool ReachedEndOfFolder(std::vector <std::string> const& folderList, WIN32_FIND_DATAA const& folderData);
 
