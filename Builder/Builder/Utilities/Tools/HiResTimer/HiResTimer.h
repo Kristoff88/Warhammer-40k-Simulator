@@ -44,20 +44,20 @@ bool Init()
 } // end Init()
 
 
-float GetElapsedSeconds(unsigned long elapsedFrames = 1)
-{
-  static LARGE_INTEGER s_lastTime = m_startTime;
-  LARGE_INTEGER currentTime;
-
-  QueryPerformanceCounter(&currentTime);
-
-  float seconds =  ((float)currentTime.QuadPart - (float)s_lastTime.QuadPart) / (float)m_ticksPerSecond.QuadPart;
-
-  // reset the timer
-  s_lastTime = currentTime;
-
-  return seconds;
-} // end GetElapsedSeconds()
+//float GetElapsedSeconds(unsigned long elapsedFrames = 1)
+//{
+//  static LARGE_INTEGER s_lastTime = m_startTime;
+//  LARGE_INTEGER currentTime;
+//
+//  QueryPerformanceCounter(&currentTime);
+//
+//  float seconds =  ((float)currentTime.QuadPart - (float)s_lastTime.QuadPart) / (float)m_ticksPerSecond.QuadPart;
+//
+//  // reset the timer
+//  s_lastTime = currentTime;
+//
+//  return seconds;
+//} // end GetElapsedSeconds()
 
 
 /***************************************************************************
