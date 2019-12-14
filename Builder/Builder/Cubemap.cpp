@@ -1,10 +1,11 @@
-#include "GlobalHeaders.h"
+#include <sstream>
+#include <string>
 
+#include <GlobalHeaders.h>
 #include "Cubemap.h"
 
 
 // Zmienne, stale zewnetrzne
-
 extern  const int 	OVERALL_MIN_HEIGHT,
 OVERALL_MAX_HEIGHT;
 
@@ -769,13 +770,10 @@ bool loadCubeMap(char* filename)
 		loadingCorrect = true;
 
 
-	char buffer[MAX_PATH];
-
-	strcpy_s(buffer, "Save file \"");
-	strcat_s(buffer, filename);
-	strcat_s(buffer, "\" is corrupted!\n\n");
-
-	std::string errorInfo = buffer;
+	std::stringstream ss;
+	ss << "Save file \"" << filename << "\" is corrupted!\n\n";
+	// FIXME: errorInfo is not used...
+	std::string errorInfo = ss.str();
 
 	std::string line;
 
